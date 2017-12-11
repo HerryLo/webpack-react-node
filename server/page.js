@@ -55,7 +55,7 @@ function findActionSEO(id) {
 
 function findTagLessonsSEO(id) {
   return new Promise(resolve => {
-    request(`${host}/tags/${id}/seo`, (err, res, body) => {
+    request(`${host}/lessons/tags/${id}/seo`, (err, res, body) => {
       if (err || res.statusCode != 200) return resolve(kSEO);
       try {
         const tag = JSON.parse(body);
@@ -93,7 +93,7 @@ async function renderAsync(element, context) {
       // if (element.type.getDefaultProps) console.log("has default props");
       const instance = new (element.type)(Object.assign({}, defaultProps, element.props), context);
       if (instance.initialize) {
-        await instance.initialize();
+          await instance.initialize();
       }
       if (instance.componentWillMount) instance.componentWillMount();
       element = instance.render();

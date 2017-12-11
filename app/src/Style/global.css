@@ -3,7 +3,8 @@ body,button,dd,dl,dt,figure,h1,html,li,p,span,strong,u,ul,img{margin:0;padding:0
 li,ol,ul{list-style:none}
 cite,em,i{font-style:normal}
 a{color:#fff;text-decoration:none}
-img{ width: 100%; height: auto;}
+img{ max-width: 100%; height: auto;}
+p img {  display: block;  margin: auto;}
 
 
 /*****  index  *****/
@@ -81,6 +82,7 @@ img{ width: 100%; height: auto;}
 .pagelist ul li figure{ height: 13.6rem;}
 .pagelist ul li figure>img{
 	height: 100%;
+    width: 100%;
 }
 .pagelist ul li p{ position: absolute; width: 100%; top: 0; text-shadow: 2px 2px 1px rgba(0,0,0,0.5);}
 .pagelist ul li p span{ display: block; font-size: 1.66rem; padding: 3.5rem 0 1.7rem 0; text-align: center;}
@@ -98,91 +100,422 @@ img{ width: 100%; height: auto;}
 .pageFooter cite{ width: 75%; text-align: center; line-height: 3.4rem; padding: 0; background: #262A32; color: #fff;}
 
 @media screen and (min-width: 1024px) {
-/*****  index  *****/
-body{ min-width: 1004px;}
-.w1000{ width: 1000px; margin: 0 auto;}
-.banner{ height: auto; background:none; overflow: hidden;}
-.banner img{ display: block;}
-.banner span{ top: 50px; left: 6%; width: 690px; height: 285px; background:url(../img/pc_logo.png) no-repeat;}
-.banner cite{ position: absolute; display: block; bottom: 50px; left: 5%; font-size: 35px; color: #fff;}
-.banner p{ position: absolute; width: 565px; bottom: 40px; right: 4%;}
-.banner p a,.down a,.coyybtn a{ float: left; width: 203px; height: 71px; margin: 0 30px 0 0; background:url(../img/pc_ios.png) no-repeat;}
-.banner p a.last,.down a.last,.coyybtn a:last-child{ background-image:url(../img/pc_and.png);}
-.banner p em{ display: block; cursor: pointer; float: right; width: 97px; height: 71px; background:url(../img/pc_xewm.png) no-repeat;}
-.pc_ewm{ position: absolute; right:0; bottom: 95px; width: 187px; height: 189px;}
+    /*****  index  *****/
+    body {
+        min-width: 1004px;
+    }
 
-.hldz{ padding: 150px 0 220px 0;}
-.hldz span{ font-size: 48px; padding-bottom: 48px;}
-.hldz p{ font-size: 26px; line-height: 35px;}
+    .w1000 {
+        width: 1000px;
+        margin: 0 auto;
+    }
 
-.zrjc,.zsdz{ position: relative; background: #1C221B;}
-.zrjc{ padding-top: 1041px;}
-.zrjc ul{width:1000px;position: absolute; top: -40px;}
-.zrjc ul li{ overflow: hidden; zoom: 1;}
-.zrjc ul li figure{ float: left; width: 650px;height: 400px;}
-.zrjc ul li cite{ left: 225px; top: 157px; width: 295px; font-size: 40px;}
-.zrjc ul li span{ display: block; float: right; line-height: 40px; color: #fff; font-size: 26px; width: 260px; height: 169px; padding: 115px 45px; text-align-last:center;border-bottom:1px solid #fff;word-wrap: break-word;}
-.zrjc ul li:last-child span{border-bottom: none;}
-.more{ padding: 120px 0 160px 0;}
-.more span{ display: none;}
-.more p{display: none;}
-.btn{ padding: 0; width: 35%; margin: 0 auto;margin-top: 100px; line-height: 93px; border: 2px solid #fff; font-size: 24px; letter-spacing: 2px; -webkit-border-radius: 10px;}
+    .banner {
+        height: auto;
+        background: none;
+        overflow: hidden;
+    }
 
-.lsdz{ padding-bottom: 150px;}
-.zsdz{ padding: 460px 0 90px 0;}
-.zsdz figure.index_pic,.zsdz figure.index_pic2,.zsdz figure.index_pic3,.zsdz figure.index_pic4{display: none;}
-.zsdz figure.pc_pic{ display: block; position: absolute; width: 432px; height: 765px; top: -70px;}
-.zsdz figure.pc_pic2{ display: block; position: absolute; margin-left: 500px; top: 100px; width: 493px; height: 419px;}
-.zsdz p{ display: none;}
-.zsdz p.last{ font-size: 24px; display: block; padding: 300px 0 0 0;}
-.zsdz p cite{ font-size: 50px; padding: 0 10px;}
-.zsdz .btn{ display: none;}
-.down{ padding: 150px 0 0 0; overflow: hidden; zoom: 1;}
-.down p{ float: right; padding-top: 74px;}
-.down p a{ float: none; margin: 80px 0 0 0;}
-.down div{display: none;}
-.pctel{ display: block; float: left; width: 306px; height: 460px;}
-.pcewm{ display: block; float: left; width: 263px; height: 256px; margin: 140px 0 0 180px;}
+    .banner img {
+        display: block;
+    }
 
-/*****  list  *****/
-.cozrjc .hldz,.hldz2{ display: block;}
-.coyy{ height: 71px; padding: 20px 0;}
-.coyy a.logo{ position: inherit; float: left; width: 164px; height: 61px; margin: 0 0 0 30px; background:url(../img/pc_logo2.png) no-repeat;}
-.coyy a.logo:after{ position: inherit; width: 0; height: 0; background: none;}
-.coyy p,.coyy span{display: none;}
-.coyybtn{ display: block; float: right; padding-right: 60px;}
-.cozrjc{ padding-top: 0px;}
-.cozrjc ul{ position: inherit; padding: 0 0 60px 45px; overflow: hidden; zoom: 1;}
-.cozrjc ul li{ float: left; width: 450px; margin: 10px 10px 0 0;}
-.cozrjc ul li figure{ width: 450px; height: 300px;}
-.cozrjc ul li figure:after{ position: inherit; width: 0; height: 0; border: 1px solid transparent;}
-.cozrjc ul li cite{ width: 170px; top: 100px; left: 140px;}
-.hldz2{ padding: 100px 0 60px 0; text-align: left;}
-.hldz2 span{ padding-bottom: 40px;}
-.cofooter,.line,.coyylist h1,.pad{display: none;}
-.coyylist{ position: inherit; background: #252A32;}
-.zrjclist{ background: #252A32;}
-.zrjclist ul li figure{ float: none;}
-.zrjclist ul li div{ width: 450px; padding: 32px 0; font-size: 30px;}
-.zrjclist ul li div span{ padding: 0; height: 76px; line-height: normal; color: #292D37;}
-.zrjclist ul li div span:first-child strong{ padding-left: 4%; line-height: 45px;}
-.zrjclist ul li div span:last-child strong{ padding-left: 1%; line-height: 44px;}
-.zrjclist ul li div span strong{height: 40px; line-height: 40px;}
-.zrjclist ul li div span em{ font-size: 24px; line-height: 25px; padding-top: 5px;}
+    .banner span {
+        top: 50px;
+        left: 6%;
+        width: 690px;
+        height: 285px;
+        background: url(../img/pc_logo.png) no-repeat;
+    }
 
-.pagelist,.pageFooter{ display: none;}
-.page{ padding-bottom: 50px;}
-.page span{ background: #252A32; font-weight: normal; font-size: 28px; color: #fff; line-height: normal; padding: 80px 0 42px 0;}
+    .banner cite {
+        position: absolute;
+        display: block;
+        bottom: 50px;
+        left: 5%;
+        font-size: 35px;
+        color: #fff;
+    }
 
-.page li figure{ width: 204px; height: 204px;}
-.page li p{ padding: 64px 0 0 8%;}
-.page li strong{ font-size: 22px;}
-.page li em{ font-size: 20px; padding-top: 36px;}
-.video{ width: 750px; margin: 0 auto;}
+    .banner p {
+        position: absolute;
+        width: 565px;
+        bottom: 40px;
+        right: 4%;
+    }
 
+    .banner p a, .down a, .coyybtn a {
+        float: left;
+        width: 203px;
+        height: 71px;
+        margin: 0 30px 0 0;
+        background: url(../img/pc_ios.png) no-repeat;
+    }
 
+    .banner p a.last, .down a.last, .coyybtn a:last-child {
+        background-image: url(../img/pc_and.png);
+    }
+
+    .banner p em {
+        display: block;
+        cursor: pointer;
+        float: right;
+        width: 97px;
+        height: 71px;
+        background: url(../img/pc_xewm.png) no-repeat;
+    }
+
+    .pc_ewm {
+        position: absolute;
+        right: 0;
+        bottom: 95px;
+        width: 187px;
+        height: 189px;
+    }
+
+    .hldz {
+        padding: 150px 0 220px 0;
+    }
+
+    .hldz span {
+        font-size: 48px;
+        padding-bottom: 48px;
+    }
+
+    .hldz p {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .zrjc, .zsdz {
+        position: relative;
+        background: #1C221B;
+    }
+
+    .zrjc {
+        padding-top: 1041px;
+    }
+
+    .zrjc ul {
+        width: 1000px;
+        position: absolute;
+        top: -40px;
+    }
+
+    .zrjc ul li {
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .zrjc ul li figure {
+        float: left;
+        width: 650px;
+        height: 400px;
+    }
+
+    .zrjc ul li cite {
+        left: 225px;
+        top: 157px;
+        width: 295px;
+        font-size: 40px;
+    }
+
+    .zrjc ul li span {
+        display: block;
+        float: right;
+        line-height: 40px;
+        color: #fff;
+        font-size: 26px;
+        width: 260px;
+        height: 169px;
+        padding: 115px 45px;
+        text-align-last: center;
+        border-bottom: 1px solid #fff;
+        word-wrap: break-word;
+    }
+
+    .zrjc ul li:last-child span {
+        border-bottom: none;
+    }
+
+    .more {
+        padding: 120px 0 160px 0;
+    }
+
+    .more span {
+        display: none;
+    }
+
+    .more p {
+        display: none;
+    }
+
+    .btn {
+        padding: 0;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 100px;
+        line-height: 93px;
+        border: 2px solid #fff;
+        font-size: 24px;
+        letter-spacing: 2px;
+        -webkit-border-radius: 10px;
+    }
+
+    .lsdz {
+        padding-bottom: 150px;
+    }
+
+    .zsdz {
+        padding: 460px 0 90px 0;
+    }
+
+    .zsdz figure.index_pic, .zsdz figure.index_pic2, .zsdz figure.index_pic3, .zsdz figure.index_pic4 {
+        display: none;
+    }
+
+    .zsdz figure.pc_pic {
+        display: block;
+        position: absolute;
+        width: 432px;
+        height: 765px;
+        top: -70px;
+    }
+
+    .zsdz figure.pc_pic2 {
+        display: block;
+        position: absolute;
+        margin-left: 500px;
+        top: 100px;
+        width: 493px;
+        height: 419px;
+    }
+
+    .zsdz p {
+        display: none;
+    }
+
+    .zsdz p.last {
+        font-size: 24px;
+        display: block;
+        padding: 300px 0 0 0;
+    }
+
+    .zsdz p cite {
+        font-size: 50px;
+        padding: 0 10px;
+    }
+
+    .zsdz .btn {
+        display: none;
+    }
+
+    .down {
+        padding: 150px 0 0 0;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .down p {
+        float: right;
+        padding-top: 74px;
+    }
+
+    .down p a {
+        float: none;
+        margin: 80px 0 0 0;
+    }
+
+    .down div {
+        display: none;
+    }
+
+    .pctel {
+        display: block;
+        float: left;
+        width: 306px;
+        height: 460px;
+    }
+
+    .pcewm {
+        display: block;
+        float: left;
+        width: 263px;
+        height: 256px;
+        margin: 140px 0 0 180px;
+    }
+
+    /*****  list  *****/
+    .cozrjc .hldz, .hldz2 {
+        display: block;
+    }
+
+    .coyy {
+        height: 71px;
+        padding: 20px 0;
+    }
+
+    .coyy a.logo {
+        position: inherit;
+        float: left;
+        width: 164px;
+        height: 61px;
+        margin: 0 0 0 30px;
+        background: url(../img/pc_logo2.png) no-repeat;
+    }
+
+    .coyy a.logo:after {
+        position: inherit;
+        width: 0;
+        height: 0;
+        background: none;
+    }
+
+    .coyy p, .coyy span {
+        display: none;
+    }
+
+    .coyybtn {
+        display: block;
+        float: right;
+        padding-right: 60px;
+    }
+
+    .cozrjc {
+        padding-top: 0px;
+    }
+
+    .cozrjc ul {
+        position: inherit;
+        padding: 0 0 60px 45px;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .cozrjc ul li {
+        float: left;
+        width: 450px;
+        margin: 10px 10px 0 0;
+    }
+
+    .cozrjc ul li figure {
+        width: 450px;
+        height: 300px;
+    }
+
+    .cozrjc ul li figure:after {
+        position: inherit;
+        width: 0;
+        height: 0;
+        border: 1px solid transparent;
+    }
+
+    .cozrjc ul li cite {
+        width: 170px;
+        top: 100px;
+        left: 140px;
+    }
+
+    .hldz2 {
+        padding: 100px 0 60px 0;
+        text-align: left;
+    }
+
+    .hldz2 span {
+        padding-bottom: 40px;
+    }
+
+    .cofooter, .line, .coyylist h1, .pad {
+        display: none;
+    }
+
+    .coyylist {
+        position: inherit;
+        background: #252A32;
+    }
+
+    .zrjclist {
+        background: #252A32;
+    }
+
+    .zrjclist ul li figure {
+        float: none;
+    }
+
+    .zrjclist ul li div {
+        width: 450px;
+        padding: 32px 0;
+        font-size: 30px;
+    }
+
+    .zrjclist ul li div span {
+        padding: 0;
+        height: 76px;
+        line-height: normal;
+        color: #292D37;
+    }
+
+    .zrjclist ul li div span:first-child strong {
+        padding-left: 4%;
+        line-height: 45px;
+    }
+
+    .zrjclist ul li div span:last-child strong {
+        padding-left: 1%;
+        line-height: 44px;
+    }
+
+    .zrjclist ul li div span strong {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .zrjclist ul li div span em {
+        font-size: 24px;
+        line-height: 25px;
+        padding-top: 5px;
+    }
+
+    .pagelist, .pageFooter {
+        display: none;
+    }
+
+    .page {
+        padding-bottom: 50px;
+    }
+
+    .page span {
+        background: #252A32;
+        font-weight: normal;
+        font-size: 28px;
+        color: #fff;
+        line-height: normal;
+        padding: 80px 0 42px 0;
+    }
+
+    .page li figure {
+        width: 204px;
+        height: 204px;
+    }
+
+    .page li p {
+        padding: 64px 0 0 8%;
+    }
+
+    .page li strong {
+        font-size: 22px;
+    }
+
+    .page li em {
+        font-size: 20px;
+        padding-top: 36px;
+    }
+
+    .video {
+        width: 750px;
+        margin: 0 auto;
+    }
 }
-
 .video-video{
     position: absolute;
     left: 0;
@@ -200,3 +533,7 @@ body{ min-width: 1004px;}
     height: 72px;
     z-index: 10;
 }
+
+/* 课程详情 */
+#ClassDetail .zrjc li div span{  text-align: center;  }
+

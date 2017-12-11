@@ -62,12 +62,18 @@ class Messages extends Component {
       document.body.style.backgroundColor = ""
     }
   }
+  componentWillReceiveProps(){
+    if (typeof document != 'undefined') {
+      document.addEventListener('scroll', this.handleScroll);
+      document.body.style.backgroundColor = "#252A32"
+    }
+  }
+
 
   handleScroll() {
     const that = this;
     const getTotaHeight = document.body.scrollHeight - document.body.scrollTop;
-
-    if (getTotaHeight - document.body.scrollTop <= 0) {
+    if (getTotaHeight - screen.availHeight <= 0) {
       that.setState({
         count: that.state.count + 5
       })
@@ -78,9 +84,12 @@ class Messages extends Component {
           }
           return response.json();
         }).then(function (res) {
-
+        let data=that.state.list
+        res.lessons.map(function(item){
+          data.push(item);
+        })
         that.setState({
-          list: res.lessons
+          list: data
         })
       }).catch(function (err) {
         document.removeEventListener('scroll', that.handleScroll);
@@ -112,7 +121,7 @@ class Messages extends Component {
         <article className="zrjc cozrjc zrjclist">
           <div className="w1000">
             <ul id="test">
-              {!getList || getList.map((props) =>
+              {!this.state.list || this.state.list.map((props) =>
                 <li key={props._id}>
                   <Link to={{pathname: "/classdetail/"+props._id}}>
                     <figure>

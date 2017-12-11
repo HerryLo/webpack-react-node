@@ -5,13 +5,22 @@
     "license": "ISC",
     "description": "",
     "scripts": {
-        "dev": "node server.js",
-        "dist": "webpack --config webpack.config.dev.js --progress --colors --watch -p",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "web": "webpack --config webpack.config.release.js --progress --watch",
-        "ser": "node server/index.js"
+        "dev": "node server.js",
+        "start": "webpack --config webpack.config.dev.js --progress --colors --watch -p",
+        "server": "node server/index.js"
     },
     "dependencies": {
+        "isomorphic-fetch": "^2.2.1",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "react-router": "^3.0.2",
+        "redux": "^3.6.0"
+    },
+    "devDependencies": {
+        "autoprefixer-loader": "^3.2.0",
+        "babel-plugin-import": "^1.1.1",
+        "express": "^4.15.2",
         "antd-mobile": "^1.0.5",
         "autoprefixer": "^6.7.7",
         "babel-core": "^6.24.0",
@@ -27,12 +36,10 @@
         "css-loader": "^0.27.3",
         "ejs": "^2.5.6",
         "es6-promise": "^4.1.0",
-        "express": "^4.15.2",
         "extract-text-webpack-plugin": "^2.1.0",
         "file-loader": "^0.10.1",
         "html-webpack-plugin": "^2.28.0",
         "http-proxy-middleware": "^0.17.4",
-        "isomorphic-fetch": "^2.2.1",
         "jsx-loader": "^0.13.2",
         "react-addons-css-transition-group": "^15.4.2",
         "react-bootstrap": "^0.30.8",
@@ -48,20 +55,7 @@
         "webpack": "^2.2.1",
         "webpack-dev-middleware": "^1.10.1",
         "webpack-dev-server": "^2.4.1",
-        "webpack-hot-middleware": "^2.17.1"
-    },
-    "devDependencies": {
-        "autoprefixer-loader": "^3.2.0",
-        "babel-plugin-import": "^1.1.1",
-        "express": "^4.15.2",
-        "isomorphic-fetch": "^2.2.1",
-        "normalize.css": "^5.0.0",
-        "react": "^15.4.2",
-        "react-bootstrap": "^0.30.8",
-        "react-dom": "^15.4.2",
-        "react-router": "^3.0.2",
-        "redux": "^3.6.0",
-        "webpack": "^2.2.1",
-        "webpack-dev-middleware": "^1.10.1"
+        "webpack-hot-middleware": "^2.17.1",
+        "webpack-merge": "^4.1.1"
     }
 }

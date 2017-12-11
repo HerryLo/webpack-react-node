@@ -128,7 +128,7 @@ class Index extends Component {
         </article>
         <article className="down w1000">
           <figure className="pctel"><img src={pc_tel}/></figure>
-          <figure className="pcewm"><img src={pc_ewm}/></figure>
+          <figure className="pcewm"><img src={pc_Xewm2}/></figure>
           <p>
             <a
               href="https://itunes.apple.com/cn/developer/shanghai-caiyi-business-electronically-co-ltd/id1146774475"></a>
@@ -141,7 +141,7 @@ class Index extends Component {
           </div>
         </article>
         <p className="copy">2014-2017&copy;Try All Rights Resrved. <br />
-          沪ICP备16004443号-2
+          沪ICP备17041155号-3
         </p>
       </div>
 

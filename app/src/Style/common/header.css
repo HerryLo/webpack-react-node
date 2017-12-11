@@ -1,0 +1,23 @@
+/*common header.js*/
+#header header.headerNew {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.7rem;
+    background: #fff;
+    z-index: 10;
+}
+
+#header header.headerNew h1 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #262A32;
+    text-align: center;
+    line-height: 2.7rem;
+}
+
+#header .h_fixed {
+    height: 2.7rem;
+    width: 100%;
+}

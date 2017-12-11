@@ -18,7 +18,7 @@ class Course extends Component {
       this.initialize()
     }
     if (typeof document != 'undefined') {
-      document.title = '健身课程列表-try健身'
+      document.title = '健身课程列表-Try健身'
       document.getElementsByName('description')[0].content ='减肥，马甲线，深蹲，减脂，瘦腿'
       document.getElementsByName('keywords')[0].content = '海量丰富的健身课程，针对胸部、腿部、腹部、背部的专项训练，有氧和无氧结合，打造最科学的健身方案'
     }

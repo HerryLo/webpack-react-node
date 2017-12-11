@@ -1,0 +1,125 @@
+html,
+body,
+div{
+    margin:0;
+}
+#root {
+  height: 100%;
+}
+#ModeType {
+  height: 100%;
+}
+#ModeType .titleDiv {
+  color: #ffffff;
+  padding: 21px 0px 21px 15px;
+  font-size: 15px;
+}
+#ModeType .divDevice{
+    height: 90px;
+    background: #080D2A;
+    position: relative;
+}
+#ModeType .divDevice .divImg{
+    position: absolute;
+    height:45px;
+    width:23px;
+    left:15px;
+    top: 26%;
+}
+#ModeType .divDevice .divImg img{
+    height:100%;
+}
+#ModeType .divDevice .div1{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 15px;
+    top: 36%;
+    left: 54px;
+}
+#ModeType .divDevice .div2{
+    position: absolute;
+    font-size: 15px;
+    color: #6a6c79;
+    top: 36%;
+    right: 15px;
+}
+#ModeType .divdes{
+    padding: 25px 0 35px 15px;
+}
+#ModeType .divdes span{
+    font-size: 15px;
+    color: #ffffff;
+} 
+#ModeType .divHandle{
+    list-style: none;
+}
+#ModeType .divHandle li{
+    height:auto;
+    background: #080D2A;
+    position: relative;
+    color: #fff;
+}
+#ModeType .divHandle li .spanHanDes{
+    height: 41px;
+    line-height: 39px;
+    display: inline-block;
+    margin-left: 15px;
+}
+#ModeType .divHandle li .liIcon{
+    display: inline-block;
+    height: 16px;
+    width: 8px;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+}
+#ModeType .divHandle li .liIcon1{
+    background: url(../img/than@3x.png) left center no-repeat;
+    background-size: 8px 16px;
+}
+#ModeType .divHandle li .liIcon2{
+    background: url(../img/than@3x.png) left center no-repeat;
+    background-size: 8px 16px;
+    transform: rotate(90deg);
+}
+#ModeType .divHandle .liDiv{
+    height: auto;
+    background: rgb(1,7,38);
+    position: relative;
+}
+#ModeType .divHandle .liDiv .handiv{
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+} 
+#ModeType .divHandle .liDiv .lidivBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #eee;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+#ModeType .divHandle  .liDiv .handlSpan{
+    font-size: 10px;
+    color: #FFFFFF;
+    height:14px;
+    margin-left: 57px;
+}
+#ModeType .divHandle .liDiv .handli{
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: relative;
+    left: 36px;
+    border: 1px solid #D8D8D8;
+}
+#ModeType .divHandle .liDiv .handiv .borderDiv{
+    width: 1px;
+    height: 29px;;
+    background: #d8d8d8;
+    position: absolute;
+    left: 39px;
+    top: 22px;
+}

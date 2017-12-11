@@ -1,25 +1,22 @@
-import React, { Component } from 'react'
+ import React, { Component } from 'react'
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 import { Link } from 'react-router'
 
-
-
 class List extends Component {
-
   render() {
     return (
     	this.props.data.type==1?<span key={this.props.index}>{this.props.data.name}</span>:<li key={this.props.index}>
-						<Link to={{pathname:"/actionvideo/"+this.props.data.actionId}} >
-							<figure>
-								<img src={this.props.data.imgUrl} />
-							</figure>
-							<p>
-								<strong>{this.props.data.name}</strong>
-								<em>{this.props.data.targetCount}</em>
-							</p>
-						</Link>
-					</li>
+			<Link to={{pathname:"/actionvideo/"+this.props.data.actionId}} >
+				<figure>
+					<img src={this.props.data.imgUrl} />
+				</figure>
+				<p>
+					<strong>{this.props.data.name}</strong>
+					<em>{this.props.data.targetCount}</em>
+				</p>
+			</Link>
+		</li>
 	)
   }
 }
@@ -71,7 +68,7 @@ class Messages extends Component {
 	render(){
 		const getData = this.state.data;
 		return(
-				<div>
+				<div id='ClassDetail'>
 				<header className="coyy coyylist w1000">
 					<Link to="/" className="logo"></Link>
 					<h1>课程详情</h1>
@@ -95,7 +92,7 @@ class Messages extends Component {
 								<img src={this.state.data.cover} />
 							</figure><p><span>{this.state.data.name}</span><em>{this.state.data.description}</em></p></a>
 							<div>
-								<span><strong>{this.state.data.duration/1000}</strong><em>分钟</em></span>
+								<span><strong>{parseInt(this.state.data.duration/1000/60)}</strong><em>分钟</em></span>
 								<span><strong>{this.state.data.intensity}</strong><em>强度</em></span><span>
 								<strong>{this.state.data.calorie}</strong><em>消耗</em></span>
 							</div>

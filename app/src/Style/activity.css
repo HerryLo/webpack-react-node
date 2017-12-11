@@ -1,0 +1,220 @@
+#activity {
+}
+
+#activity .bannerImg {
+  height: auto;
+}
+#activity .bannerImg img {
+  height: auto;
+  width: 100%;
+}
+#activity .divtitle {
+  font-size: 1.7rem;
+  color: #000000;
+  padding: 0.89rem 0.85rem 0.45rem 0.85rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#activity .divinfo {
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+}
+
+#activity .divdesc {
+  font-size: 0.9rem;
+}
+
+#activity .divdesc .pdescInfo {
+  color: #6a6a6a;
+  padding-top: 0.5rem;
+  padding-right: 0.6rem;
+  padding-left: 1.15rem;
+  word-wrap: break-word;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+
+#activity .pinfo1 {
+  padding: 0.5rem 0 0 1.15rem;
+  color: #000;
+}
+
+#activity .pinfo2 {
+  padding: 0.5rem 0 0.7rem 1.2rem;
+  color: #6a6a6a;
+}
+
+#activity .punfold {
+  font-size: 1rem;
+  color: #bebebe;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+#activity .DWgrayArrow {
+  background: url("../img/grayArrow@1.5x.png") center center no-repeat;
+  background-size: 15px 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 7px;
+}
+#activity .UpgrayArrow {
+  transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg); /* IE 9 */
+  -moz-transform: rotate(-180deg); /* Firefox */
+  -webkit-transform: rotate(-180deg); /* Safari 和 Chrome */
+  -o-transform: rotate(-180deg);
+}
+#activity .awardList {
+  margin-top: 1.1rem;
+  background: #f6f5f5;
+  height: auto;
+}
+#activity .awardList .altitle {
+  height: 2.5rem;
+  font-size: 0.9rem;
+  color: #262a32;
+}
+#activity .awardList .altitle span {
+  position: relative;
+  left: 1.15rem;
+  line-height: 2.5rem;
+}
+#activity .award {
+  background: #fff;
+  padding-bottom: 0.2rem;
+}
+#activity .awardMargin{
+    margin-bottom: 0.5rem;
+}
+#activity .award .paward {
+  position: relative;
+  padding-left: 1.1rem;
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 0.9rem;
+}
+#activity .award .spanaward {
+  position: absolute;
+  right: 0.9rem;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+#activity .award .spanaward1 {
+  position: absolute;
+  right: 0.9rem;
+  font-size: 0.9rem;
+}
+#activity .award .divaward {
+  padding-left: 1.3rem;
+  height: 5.5rem;
+}
+#activity .award .divaward .awardimgIcon {
+  float: left;
+  height: auto;
+  text-align: center;
+}
+#activity .award .divaward .bgawardImg {
+  background: #e2e2e2;
+  border-radius: 20%;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+#activity .award .divaward .awardimgIcon p {
+  padding-top: 0.2rem;
+  padding-top: 0.2rem;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+}
+#activity .award .divaward .awardimgIcon p.color {
+  color: #262a32;
+}
+#activity .award .divaward .bgawardImg img {
+  height: 70%;
+  position: relative;
+  top: 0.6rem;
+}
+#activity .award .divaward .plusEqual {
+  text-align: center;
+  font-size: 1.25rem;
+  height: 3.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 3.5rem;
+  float: left;
+}
+#activity .awardList .awardjoin {
+  background: #fff;
+  text-align: center;
+  padding: 1.21rem 0 1.25rem;
+  
+}
+#activity .awardList .awardjoin a {
+  font-size: 1rem;
+  color: #494949;
+  border: 0px;
+  background: #fee13c;
+  border-radius: 4px;
+  padding: 0.7rem 7.95rem 0.76rem;
+  display:inline-block;
+}
+#activity .mask {
+  background: #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.77;
+}
+#activity .floatSuccess {
+  position: fixed;
+  height: 25rem;
+  z-index: 888;
+  color: #fff;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#activity .floatSuccess .float {
+  background: url(../img/Floret@2x.png) 50% no-repeat;
+  width: 19.2rem;
+  height: 11.68rem;
+  background-size: 19.2rem 11.68rem;
+  margin: auto;
+}
+#activity .floatSuccess .float img{
+    height: 6.5rem;
+    position: relative;
+    top: 3.8rem;
+}
+#activity .floatSuccess .ptitle {
+  font-size: 1.3rem;
+  color: #fff;
+  padding-bottom: 0.8rem;
+}
+#activity .floatSuccess .btnDesc{
+    margin-top:1.5rem;
+}
+#activity .floatSuccess .btnDesc .descName{
+    font-size:1rem;
+}
+#activity .floatSuccess .btnDesc .desc{
+    font-size:1rem;
+    width: 13rem;
+    margin: auto;
+    padding-top: .5rem;
+    padding-bottom: 1.2rem;
+}
+#activity .floatSuccess .btnDesc .btn{
+    border: 0;
+    background: #fee13c;
+    margin: auto;
+    height: 3rem;
+    width: 14rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
