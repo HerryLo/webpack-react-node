@@ -4,7 +4,7 @@ const BaseConfig = require("./webpack.config.base");
 
 const Build_Path = path.resolve(__dirname, "./app/__build__/dist/static");
 const ServerBuildPath = path.resolve(__dirname, "./server/dist");
-const publicPath = "http://10.0.30.152:3505/static/";
+const publicPath = "http://localhost:3505/static/";
 
 module.exports = merge.multiple( BaseConfig,{
   client: {

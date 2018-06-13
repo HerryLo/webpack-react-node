@@ -1,6 +1,7 @@
 // const http = 'https://webapp.tryfits.com';
 const http = 'http://webappserver.gs.tryfits.com:3503';
-// https://webapp.tryfits.com
+// const http = 'http://localhost:3505';
+
 global.API = {
   'getList': http + '/lessons/tags/',
   'classDetail': http + '/lessons/',

@@ -28,12 +28,12 @@ module.exports = {
             use: ["css-loader"],
             publicPath: "./"
           }),
-          //exclude: /^node_modules$/,
+          exclude: /^node_modules$/,
           include: [App_Path]
         },
         {
           test: /\.(png|jpg|gif)$/,
-          loader: "url-loader?limit=8192&name=images/[hash:8].[name].[ext]",
+          loader: "url-loader?limit=2000&name=images/[hash:8].[name].[ext]",
           //注意后面那个limit的参数，当你图片大小小于这个限制的时候，会自动启用base64编码图片
           exclude: /^node_modules$/,
           include: [App_Path]
@@ -88,7 +88,7 @@ module.exports = {
         },
         {
           test: /\.(png|jpg|gif)$/,
-          loader: "url-loader?limit=8192&name=images/[hash:8].[name].[ext]",
+          loader: "url-loader?limit=2000&name=images/[hash:8].[name].[ext]",
           //注意后面那个limit的参数，当你图片大小小于这个限制的时候，会自动启用base64编码图片
           exclude: /^node_modules$/,
           include: [App_Path]
