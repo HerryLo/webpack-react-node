@@ -1,11 +1,12 @@
 # webpack-react-node
 
 ## 技术栈
-* react@15.0 版本
-* react-router@3.0 路由
-* ejs作为编译模版
-* fetch 请求数据
-* node作为中间件编译
+基于react的服务端渲染：
+  * react@15.0 版本
+  * react-router@3.0 路由
+  * ejs作为编译模版
+  * fetch 请求数据
+  * node作为中间件编译
 
 ## 运行
 ```
