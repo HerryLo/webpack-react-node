@@ -1,10 +1,10 @@
 # webpack-react-node
 
-前端代码的不断增大，页面加载渲染时长不断增加。node服务段渲染完美的解决了这个问题。将页面在服务段渲染完成，用户等待时间缩短，极大的提升了用户体验。
+Front end code is increasing, and page loading and rendering time is increasing. Node service segment rendering perfectly solves this problem. The page is rendered in service segment and user waiting time is shortened, which greatly improves user experience.
 
 ## stack
 
-基于react的服务端渲染：
+react server render：
 
   * react@15.0 
   * react-router@3.0 
@@ -24,4 +24,4 @@ $ npm run dev
 $ npm run server 
 ```
 
-after server start，open [http://localhost:3505](http://localhost:3505) 访问
+after server start，open [http://localhost:3505](http://localhost:3505)
