@@ -25,3 +25,7 @@ $ npm run server
 ```
 
 after server start，open [http://localhost:3505](http://localhost:3505)
+
+### vx欢迎交流
+
+<img width="300" height="300" center src="https://didiheng.com/image/IMG_0574.JPG" />
